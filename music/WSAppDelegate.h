@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 @interface WSAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UIBackgroundTaskIdentifier bgTask;
+    NSTimer *timer;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
